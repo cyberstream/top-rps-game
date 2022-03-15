@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,700;1,900&display=swap');
+
+body {
+  background-color: #1D2228;
+  color: #E1E2E2;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  text-align: center;
+  width: 850px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #525252;
+  color: #E1E2E2;
+  border: 1px solid #7e7e7e;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 150ms;
+}
+
+.game-choices {
+  flex-wrap: wrap;
+}
+
+.game-choices button {
+  margin-left: -1px;
+}
+
+.games-choices .flex-item:first-child {
+  margin-left: 0;
+}
+
+button img {
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #8b8a8a;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.game-choices .flex-item {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item > h2, .flex-item > div, .flex-item > p {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.winner {
+  box-shadow: 0 0 35px #43e143;
+  z-index: 100;
+}
+
+.loser {
+  box-shadow: 0 0 35px #9f0000 inset;
+}
+
+.scorecard {
+  margin: 50px 20px;
+  background: #525252;
+  height: 70px;
+}
+
+.scorecard .player {
+  background-color: #7e7e7e;
+}
+
+.scorecard div {
+  padding: 10px;
+}
